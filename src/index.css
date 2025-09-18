@@ -4,10 +4,14 @@
   color-scheme: light;
   color: #1f2330;
   /* Enhanced color palette */
-  --brand: #6366f1; /* vibrant indigo */
-  --brand-2: #8b5cf6; /* purple */
-  --brand-3: #a855f7; /* lighter purple */
-  --lavender: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 50%, #f1f5f9 100%);
+  /* Corporate blues + orange accent like reference */
+  --brand: #1e88e5; /* blue */
+  --brand-2: #0d6efd; /* deeper blue */
+  --brand-3: #0b5ed7; /* darkest blue */
+  --accent: #f47c2b; /* orange CTA */
+  --lavender: radial-gradient(1200px 600px at 10% -10%, rgba(13,110,253,.10), transparent),
+              radial-gradient(1000px 500px at 110% 10%, rgba(30,136,229,.08), transparent),
+              linear-gradient(180deg, #f7fafc 0%, #f0f5ff 60%, #ffffff 100%);
   --card: #ffffff;
   --muted: #64748b;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -21,12 +25,26 @@
 * { box-sizing: border-box; }
 body { margin: 0; }
 a { color: inherit; text-decoration: none; }
-h1, h2, h3 { line-height: 1.2; }
+h1, h2, h3 { line-height: 1.2; letter-spacing: -0.01em; }
 p { margin: 0.25rem 0 0.75rem; }
 
 /* Light theme; remove animated background for clean look */
 
 #root { min-height: 100vh; }
 html { scroll-behavior: smooth; }
+
+/* Section container spacing helpers */
+.container { padding-left: 0.5rem; padding-right: 0.5rem; }
+
+/* Subtle page overlay pattern */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(#c7d2fe 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: .25;
+  pointer-events: none;
+}
 
 /* no animated background */

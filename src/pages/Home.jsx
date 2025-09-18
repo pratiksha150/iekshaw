@@ -5,6 +5,7 @@ import Contact from './Contact'
 
 function Home() {
   return (
+    <>
     <section className="hero">
       <div className="container hero__inner">
         <div className="hero__content">
@@ -22,6 +23,8 @@ function Home() {
           <div className="glass"></div>
         </div>
       </div>
+    </section>
+
       <div className="container section">
         <h2>Business Verticals</h2>
         <div className="grid three">
@@ -67,7 +70,7 @@ function Home() {
       <Services />
       <div id="contact"></div>
       <Contact />
-    </section>
+    </>
   )
 }
 
