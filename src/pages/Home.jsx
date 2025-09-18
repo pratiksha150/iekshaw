@@ -21,7 +21,7 @@ function Home() {
         </div>
         <div className="hero__image" aria-hidden>
           <div className="glass"></div>
-          <img src="/machine.png" alt="Industrial machine" className="hero__machine" />
+          <img src="/lamp.jpg" alt="Industrial lamp" className="hero__machine" />
         </div>
       </div>
     </section>
