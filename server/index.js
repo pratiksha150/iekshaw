@@ -41,7 +41,7 @@ app.post('/api/contact', async (req, res) => {
 
     const transporter = nodemailer.createTransport(transportConfig)
 
-    const toAddress = process.env.TO_EMAIL || 'pratikshans1975@gmail.com'
+    const toAddress = process.env.TO_EMAIL || 'sales@iekshawxxxx.com'
 
     await transporter.sendMail({
       from: `Website Contact <${process.env.FROM_EMAIL || process.env.SMTP_USER}>`,

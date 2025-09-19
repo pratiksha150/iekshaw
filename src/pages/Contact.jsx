@@ -13,11 +13,15 @@ function Contact() {
   return (
     <section className="contact">
       <div className="section container">
-        <h1>Contact Us</h1>
-        <p className="muted">We typically reply within one business day.</p>
+        <div className="contact__header">
+          <div className="contact__icon">💬</div>
+          <h1>Contact Us</h1>
+          <p className="muted">We typically reply within one business day.</p>
+        </div>
         {sent && (
-          <div className="alert success thanks">😊 Thanks{form.name ? `, ${form.name}` : ''}! Your message has been sent. We’ll get back to you shortly.</div>
+          <div className="alert success thanks">😊 Thanks{form.name ? `, ${form.name}` : ''}! Your message has been sent. We'll get back to you shortly.</div>
         )}
+        
         <form
           className="form"
           onSubmit={async (e) => {
